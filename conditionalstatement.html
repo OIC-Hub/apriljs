@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statement</title>
+</head>
+<body>
+    <div id="welcome"></div>
+    <script>
+        let firstName ="Sunday"
+        if(firstName == "sunday"){
+            document.getElementById('welcome').innerHTML="Welcome to Javascript class, " + firstName
+        }else{
+            document.getElementById('welcome').innerHTML="You are not allowed to join this class, " + firstName
+        }
+
+        let score=-67
+        if(score >= 70 && score <= 100){
+            console.log('A')
+        }else if(score >= 60 && score < 70){
+            console.log('B')
+        }else if(score >= 50 && score < 60){
+            console.log('c')
+        }else if(score >= 45 && score < 50){
+            console.log('D')
+        }else if(score >= 40 && score < 45){
+            console.log('E')
+        }else if(score > 100 || score < 0){
+            console.log('Invalid')  
+        }
+        else{
+            console.log('F')
+        }
+
+
+        // switch
+let day = 1
+    switch(day){
+        case 1:
+            console.log("Monday")
+            break;
+        case 2:
+            console.log("Tuesday")
+            break;
+            case 3:
+                console.log("Wednesday")
+                break;
+            case 4:
+                console.log("Thursday")
+                break;
+            case 5:
+                console.log("Friday")
+                break;
+            case 6:
+                console.log('Saturday')
+                break;
+                case 7:
+                console.log('Sunday')
+                break;
+                default:
+                console.log('Invalid Date')
+    }
+
+    </script>
+</body>
+</html>
