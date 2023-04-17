@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <h2 id="welcome" onmouseover="disappear()">Hello World</h2>
+  <button onclick="welcome()">Greeting</button><br>
+    <button onclick="plus()">Add</button>
+  <p>Sum of A number: <span id="sum"> </span></p>
+    
+    <script>
+        /*
+          //Syntax
+          function functionName(optional parameters){
+            //code
+          }
+        */
+  function welcome(){
+    document.getElementById('welcome').innerHTML="Welcome to JS week 2 class"
+  }
+  function disappear(){
+    document.getElementById('welcome').innerHTML=""
+  }
+//   var a =90
+
+//   function sum(){
+//     var a=67
+//     let b =100
+//     document.getElementById('sum').innerHTML= a + b
+
+//   }
+
+// function plus(a=0, b=0, c=0, name="Ade"){
+//      console.log(c)
+//     document.getElementById('sum').innerHTML=a + b + c + "Your name is "+ name
+
+//   }
+ 
+
+function multiplication(a, b){
+    return a*b
+  
+}
+console.log(multiplication(45, 56))
+ </script>
+</body>
+</html>

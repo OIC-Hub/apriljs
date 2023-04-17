@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic</title>
+</head>
+
+<body>
+    <div>
+
+        <input oninput="grade()" type="text" name="" id="score">
+    </div>
+    <input type="text" name="" id="output" placeholder="0">
+     <button onclick="one()">1</button>
+     <button onclick="document.getElementById('output').value +='2'">2</button>
+     <button onclick="document.getElementById('output').value +='3'">3</button>
+     <button onclick="document.getElementById('output').value +='+'">+</button>
+     <button onclick="document.getElementById('output').value =eval(document.getElementById('output').value)">=</button>
+     <button onclick="deleteCal()">c</button>
+     
+    <script>
+    // console.log(document.getElementById('output').value)     
+        // document.getElementById('output').value="Sunday Omolewu"
+  console.log(eval("345+78-78"))
+  function one(){
+    document.getElementById('output').value +='1'
+  }
+  function deleteCal(){
+    document.getElementById('output').value =''
+  }
+
+  function grade(){
+    let score= document.getElementById('score').value;
+    console.log(score)
+
+}  
+   </script>
+</body>
+</html>
