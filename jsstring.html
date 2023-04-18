@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+    
+    <p id="objectString"></p>
+    <script>
+        let name ="Sunday Opeyemi Sunday"
+        // let firstName = new String('Sunday')
+    // document.getElementById('objectString').innerHTML=`
+    // Hello
+    //  Javascript. ${firstName} Welcome to OIC Hub, ${name} ` 
+
+
+    //length
+
+   console.log(name.length)
+   console.log(name[4])
+
+   // slice()
+//  let newName=  name.slice(7)
+let numChar = name.length;
+let newName=  name.slice(0, numChar-1)
+    console.log(name.slice(0, -1))
+    
+    //substring()
+  console.log(name.substring(0, 7)) 
+  
+  // substr(index, length)
+ console.log(name.substr(6, 4 ))
+// toUpperCAse()
+ console.log("aderemi".toUpperCase())
+//tolowerCase()
+ console.log(name.toLowerCase())
+ //includes()
+let phone="08102519926"
+console.log(phone.includes('081'))
+if(phone.includes('081')){
+    console.log('Validated')
+}else{
+    console.log('Not Validated')
+}
+//trim()
+let nam="              Ope          "
+console.log(nam.trim())
+let newNam=nam.trim()
+//trimStart()
+console.log(nam.trimStart())
+//trimEnd()
+console.log(nam.trimEnd())
+
+// CharAt
+console.log(newNam.charAt(2))
+
+// replace()
+//   let replName= name.replace('Sunday', 'Omolewu')
+//      console.log(replName)
+
+//replaceAll()
+let replName= name.replaceAll('Sunday', 'Omolewu')
+     console.log(replName)
+
+//indexof()
+console.log(phone.indexOf('081'))
+
+//search()
+console.log(phone.search('78'))
+//match()
+</script>
+</body>
+</html>
