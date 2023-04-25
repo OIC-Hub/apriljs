@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop</title>
+</head>
+<body>
+    
+    <script>
+        // for Loop
+
+        /* Syntax
+        for(initiation; condition; increment/Decrement){
+            //Code
+        }
+        */
+       let word=""
+       for(let i=0; i< 5; i++){
+        word += 'No Cheating \n';
+       }
+     //    let i =0
+   //     for(; ;){
+    //         if(i== 5){
+    //             break
+    //         }
+    //       word += 'No Cheating \n';
+    //       i++
+
+    //     }
+    //    console.log(word)
+     let stateNums=""
+    for(let i=1; i <= 100; i++){
+    
+        if(i % 2==0){
+            stateNums += `${i} is even Number \n`
+        }else{
+            stateNums += `${i} is odd Number \n`
+        }
+    }
+    console.log(stateNums)
+
+      let newnums=""
+      const avgNums=[]
+    let nums=[23, 5, 7, 89, 56];
+    for(let i= 0; i < nums.length; i++){
+        newnums += nums[i] + "\n"
+        avgNums[i]= nums[i]/2
+
+    }
+    console.log(avgNums)
+let arryGreater = false
+  for(let i=0; i< nums.length; i++){
+      if(nums[i] > 100){
+        arryGreater =true;
+        break;
+      }
+
+  }
+  console.log(arryGreater)
+  //While Loop
+
+  /* 
+  while(condition){
+   //code
+
+  }
+  */
+
+  let sn =0;
+//   while(i<=10){
+//     console.log(i)
+//     i++
+//   }
+
+// while(sn< nums.length){
+//     console.log(nums[sn])
+//     sn++
+// }
+
+do{
+    console.log(nums[sn])
+    sn++
+}while(sn <nums.length)
+//Object
+const user ={name:'Sunday', age:45, address:'Osogbo', isSocial: true, socialMedia:['twitter', 'facebook', 'linkedin']}
+//    console.log(user['address'])
+//   console.log(user['socialMedia'])
+
+// For In Loop
+// for object
+// for(let u in user){
+//     console.log(user[u])
+// }
+
+// for array
+
+for(let n in nums){
+    console.log(nums[n])
+}
+
+// for of
+for(let n of nums){
+    console.log(n)
+}
+</script>
+</body>
+</html>
